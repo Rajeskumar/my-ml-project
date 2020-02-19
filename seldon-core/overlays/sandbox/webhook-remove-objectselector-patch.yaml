@@ -1,0 +1,6 @@
+- op: remove
+  path: /webhooks/0/objectSelector
+- op: remove
+  path: /webhooks/1/objectSelector
+- op: remove
+  path: /webhooks/2/objectSelector

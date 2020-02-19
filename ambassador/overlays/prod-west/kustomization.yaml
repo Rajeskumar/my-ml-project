@@ -1,0 +1,13 @@
+resources:
+    - ../../base
+patches:
+    - deployment-replica-patch.yaml
+    - clusterrolebinding-ns-patch.yaml
+patchesJson6902:
+    - target:
+        version: v1
+        kind: Service
+        name: ambassador
+      path: svc-externaltrafficpolicy-patch.yaml
+      path: svc-type-patch.yaml
+      path: svc-port-patch.yaml

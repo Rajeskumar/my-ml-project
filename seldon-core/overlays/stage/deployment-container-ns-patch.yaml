@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: seldon-controller-manager
+    namespace: 'ml-serving'
+spec:
+    template:
+      spec:
+        containers:
+        - args:
+          - --namespace=ml-serving-stage
+          - --enable-leader-election
+          - --webhook-port=8443
+          name: manager

@@ -1,0 +1,18 @@
+resources:
+    - ../../base
+patchesJson6902:
+- target:
+    group: admissionregistration.k8s.io
+    version: v1beta1
+    kind: MutatingWebhookConfiguration
+    name: seldon-mutating-webhook-configuration-ml-serving
+  path: webhook-remove-objectselector-patch.yaml
+- target:
+    group: admissionregistration.k8s.io
+    version: v1beta1
+    kind: ValidatingWebhookConfiguration
+    name: seldon-validating-webhook-configuration-ml-serving
+  path: webhook-remove-objectselector-patch.yaml
+patches:
+    - deployment-replica-patch.yaml
+    - sdep-remove-subresource-patch.yaml

@@ -1,0 +1,4 @@
+resources:
+    - bby-ambassador-crds.yaml
+    - bby-ambassador.yaml
+    - bby-ambassador-route.yaml

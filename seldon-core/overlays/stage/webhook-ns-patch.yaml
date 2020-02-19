@@ -1,0 +1,9 @@
+- op: replace
+  path: /webhooks/0/namespaceSelector/matchLabels/seldon.io~1controller-id
+  value: ml-serving-stage
+- op: replace
+  path: /webhooks/1/namespaceSelector/matchLabels/seldon.io~1controller-id
+  value: ml-serving-stage
+- op: replace
+  path: /webhooks/2/namespaceSelector/matchLabels/seldon.io~1controller-id
+  value: ml-serving-stage
