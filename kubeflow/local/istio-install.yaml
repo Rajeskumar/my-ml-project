@@ -117,11 +117,11 @@ metadata:
   name: istio-mixer-service-account
   namespace: istio-system
 ---
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: istio-multi
-  namespace: istio-system
+# apiVersion: v1
+# kind: ServiceAccount
+# metadata:
+#   name: istio-multi
+#   namespace: istio-system
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -534,32 +534,32 @@ rules:
   - list
   - watch
 ---
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole
-metadata:
-  name: istio-reader
-rules:
-- apiGroups:
-  - ""
-  resources:
-  - nodes
-  - pods
-  - services
-  - endpoints
-  - replicationcontrollers
-  verbs:
-  - get
-  - watch
-  - list
-- apiGroups:
-  - extensions
-  - apps
-  resources:
-  - replicasets
-  verbs:
-  - get
-  - list
-  - watch
+# apiVersion: rbac.authorization.k8s.io/v1
+# kind: ClusterRole
+# metadata:
+#   name: istio-reader
+# rules:
+# - apiGroups:
+#   - ""
+#   resources:
+#   - nodes
+#   - pods
+#   - services
+#   - endpoints
+#   - replicationcontrollers
+#   verbs:
+#   - get
+#   - watch
+#   - list
+# - apiGroups:
+#   - extensions
+#   - apps
+#   resources:
+#   - replicasets
+#   verbs:
+#   - get
+#   - list
+#   - watch
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
