@@ -1,0 +1,6 @@
+resources:
+    - ../defaultBase/
+
+patches:
+    - deployment-reposerver-env-var-patch.yaml
+    - deployment-reposerver-sa-patch.yaml

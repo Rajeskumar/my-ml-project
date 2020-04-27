@@ -1,0 +1,7 @@
+resources:
+    - ../../bbyBase
+
+patches:
+    - deployment-apiserver-image-patch.yaml
+    - deployment-reposerver-image-patch.yaml
+    - deployment-controller-image-patch.yaml
