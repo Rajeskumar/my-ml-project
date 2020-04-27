@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: argocd-repo-server
+spec:
+    template:
+      spec:
+        containers:
+        - name: argocd-repo-server
+          image: us.gcr.io/bby-ml-platform-sandbox-bab6/bby-argocd:v1.5.1.3
