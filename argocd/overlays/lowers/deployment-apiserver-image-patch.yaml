@@ -7,4 +7,4 @@ spec:
       spec:
         containers:
         - name: argocd-server
-          image: us.gcr.io/bby-ml-platform-sandbox-bab6/bby-argocd:v1.5.1.3
+          image: us.gcr.io/bby-ml-platform-sandbox-bab6/bby-argocd:v1.5.1.2
